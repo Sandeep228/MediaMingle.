@@ -89,7 +89,7 @@ import { SiYoutubeshorts } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const { loginWithRedirect, isAuthenticated, isLoading } = useAuth0();
+  const { loginWithRedirect, isAuthenticated,  } = useAuth0();
   const navigate = useNavigate();
 
   React.useEffect(() => {
@@ -98,9 +98,6 @@ const Home = () => {
     }
   }, [isAuthenticated, navigate]);
 
-  const handleAuth = async () => {
-    await loginWithRedirect();
-  };
 
   return (
     <Box
@@ -119,7 +116,7 @@ const Home = () => {
           <Stack display="flex" justifyContent="space-between" position="sticky">
             <Box display="flex" justifyContent="center" alignItems="center">
               <Icon as={SiYoutubeshorts} h={6} w={6} style={{ marginRight: "13px" }} />
-              <Typography onClick={handleAuth} as="b" style={{ fontSize: "23px" }} color="white">
+              <Typography  as="b" style={{ fontSize: "23px" }} color="white">
                 MediaMingle
               </Typography>
             </Box>
@@ -157,7 +154,7 @@ const Home = () => {
               <Button
                 variant="contained"
                 style={{ fontSize: "20px", borderRadius: "24px" }}
-                onClick={handleAuth}
+                onClick={() => loginWithRedirect()}
                 startIcon={<FaGoogle />}
                 color="primary"
               >

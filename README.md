@@ -5,29 +5,11 @@ MediaMingle is a dynamic online platform designed to bring people together throu
 
 ## API Reference
 
-#### Get all items
-
-```http
-  GET /api/items
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your  key |
-
-#### Get item
-
-```http
-  GET /api/items/${id}
-```
-
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
+-Use RapidApi 
 
 ## Demo
 
+https://mediamingle.netlify.app/
 
 
 ## Deployment
@@ -37,7 +19,6 @@ To deploy this project run
 ```bash
   npm run build
 ```
-
 
 ## Environment Variables
 
@@ -52,7 +33,7 @@ To run this project, you will need to add the following environment variables to
 
 ## Documentation
 
-[Documentation](https://linktodocumentation)
+[Documentation](https://rapidapi.com/ytdlfree/api/youtube-v31?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=referral&utm_campaign=DevRel)
 
 
 ## Features
@@ -60,15 +41,12 @@ To run this project, you will need to add the following environment variables to
 
 - User Authentication with Auth0
 - Integrate a video player that supports features suchas play, pause, seek, volume
-control, and full-screen mode.
-o Include options for closedcaptions and quality settings.
-- Implement a page or component where users can browse the entire catalogue of
-available videos.
-o Allow users tofilter content by genre, releasedate, and other relevant criteria
-- Implement a search feature that allows users to find specific content by title, genre, or
-actor.
-o Provide searchsuggestions as users type
-
+ control, and full-screen mode.Include options for closedcaptions and quality settings.
+- Implement a page or component where users can browse the entire catalogue ofavailable videos.
+- Allow users tofilter content by genre, releasedate, and other relevant criteria
+- Implement a search feature that allows users to find specific content by title, genre, or actor.
+-  Provide search suggestions as users type
+- Responsive Design:
 ## Feedback
 
 If you have any feedback, please reach out to us at sd769113@gmail.com
